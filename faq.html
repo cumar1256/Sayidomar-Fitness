@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Desk FAQs | Sayidomar Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <style>
+        /* Scoped styles specifically for standard interactive accordion functionality without JavaScript */
+        details {
+            background-color: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            transition: var(--transition);
+        }
+        details[open] {
+            border-color: var(--primary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+        }
+        summary {
+            font-family: var(--font-heading);
+            font-weight: 600;
+            color: var(--heading);
+            cursor: pointer;
+            list-style: none;
+            position: relative;
+            padding-right: 2rem;
+        }
+        summary::after {
+            content: '▼';
+            position: absolute;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%) scale(0.8);
+            color: var(--text);
+            transition: var(--transition);
+        }
+        details[open] summary::after {
+            transform: translateY(-50%) rotate(180deg) scale(0.8);
+            color: var(--primary);
+        }
+        details p {
+            margin-top: 1rem;
+            color: var(--text);
+            border-top: 1px solid var(--border);
+            padding-top: 1rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">
+                <img src="logo.png" alt="Sayidomar Fitness Logo">
+            </a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="trainers.html">Trainers</a></li>
+                <li><a href="membership.html">Membership</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="faq.html" class="active">FAQ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container" style="max-width: 800px;">
+        <div class="section-header">
+            <p>Knowledge Base</p>
+            <h2>Frequently Asked Questions</h2>
+        </div>
+
+        <!-- Semantic HTML5 Interactive Details Elements (Bypasses JS Requirements completely) -->
+        <details>
+            <summary>Are there sign-up cancellation or contract termination penalties?</summary>
+            <p>No. Our Basic and Elite membership tracks are engineered on rolling month-to-month continuous billing structures. You can terminate auto-renewals 10 business days clear of your next scheduled calendar billing block without encountering exit penalty assessments.</p>
+        </details>
+
+        <details>
+            <summary>What equipment arrays are permanently provisioned on-site?</summary>
+            <p>Our infrastructure holds pristine multi-station competition compound platforms, solid calibrated steel Olympic plates, specialized multi-grip bars, specialized dual-cable towers, high-performance mechanical air bikes, rowers, and solid dumbbells mapping scales up to 150 lbs.</p>
+        </details>
+
+        <details>
+            <summary>Can I book one-on-site orientation tours prior to selecting memberships?</summary>
+            <p>Absolutely. Reach through our core Contact page configuration to set clean time blocks with one of our master training coordinators to review the gear deployment systems first-hand.</p>
+        </details>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid" style="padding: 0 0 40px 0;">
+            <div class="footer-col">
+                <h3>Sayidomar Fitness</h3>
+                <p>Providing pristine high-performance workout areas designed strictly to unlock internal athletic potential.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="about.html">About Team</a></li>
+                    <li><a href="services.html">Programs</a></li>
+                    <li><a href="membership.html">Pricing Structure</a></li>
+                    <li><a href="faq.html">Help Desk / FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Hours</h3>
+                <p>Weekdays: 5:00 AM - 11:00 PM<br>Weekends: 6:00 AM - 9:00 PM</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sayidomar Fitness. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
